@@ -12,6 +12,7 @@ export class FlightDetailsService {
 
   constructor(private http: HttpClient) {}
 
+  //Method to submit a POST request
   submitFlightDetails(payload: FlightInfoPayload): Observable<any> {
     const headers = new HttpHeaders({
       token:
