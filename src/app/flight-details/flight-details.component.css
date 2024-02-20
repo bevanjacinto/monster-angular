@@ -1,0 +1,36 @@
+.form-wrapper {
+  max-width: 600px;
+  margin: auto;
+  padding: 5px;
+}
+
+mat-form-field {
+  border-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#comments {
+  height: 100px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+.submit {
+  background-color: #25812a;
+}
+
+.logout {
+  background-color: red;
+  color: #ffffff;
+}

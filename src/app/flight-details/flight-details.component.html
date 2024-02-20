@@ -1,0 +1,68 @@
+<div class="form-wrapper">
+  <form [formGroup]="flightForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Airline</mat-label>
+      <input matInput id="airline" type="text" formControlName="airline" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Arrival Date</mat-label>
+      <input
+        matInput
+        id="arrivalDate"
+        type="date"
+        formControlName="arrivalDate"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Arrival Time</mat-label>
+      <input
+        matInput
+        id="arrivalTime"
+        type="time"
+        formControlName="arrivalTime"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Flight Number</mat-label>
+      <input
+        matInput
+        id="flightNumber"
+        type="text"
+        formControlName="flightNumber"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Number of Guests</mat-label>
+      <input
+        matInput
+        id="numOfGuests"
+        type="number"
+        formControlName="numOfGuests"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Comments</mat-label>
+      <textarea matInput id="comments" formControlName="comments"></textarea>
+    </mat-form-field>
+
+    <div class="button-container">
+      <button
+        class="submit"
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="!flightForm.valid"
+      >
+        Submit
+      </button>
+      <button class="logout" mat-button type="button" (click)="logout()">
+        Logout
+      </button>
+    </div>
+  </form>
+</div>
